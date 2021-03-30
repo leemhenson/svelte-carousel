@@ -40,7 +40,7 @@ if (dev) {
 }
 
 export default {
-	input: dev ? './demo/demo.js' : './src/Carousel.svelte',
+	input: dev ? './demo/demo.js' : './src/index.js',
 	output,
 	plugins
 }

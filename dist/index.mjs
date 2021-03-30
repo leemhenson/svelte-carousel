@@ -824,4 +824,4 @@ class Carousel extends SvelteComponent {
 	}
 }
 
-export default Carousel;
+export { Carousel };

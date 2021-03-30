@@ -1,8 +1,8 @@
 (function (global, factory) {
-    typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
-    typeof define === 'function' && define.amd ? define(factory) :
-    (global = global || self, global.Carousel = factory());
-}(this, function () { 'use strict';
+    typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :
+    typeof define === 'function' && define.amd ? define(['exports'], factory) :
+    (global = global || self, factory(global.Carousel = {}));
+}(this, function (exports) { 'use strict';
 
     function noop() { }
     function assign(tar, src) {
@@ -830,6 +830,8 @@
     	}
     }
 
-    return Carousel;
+    exports.Carousel = Carousel;
+
+    Object.defineProperty(exports, '__esModule', { value: true });
 
 }));
